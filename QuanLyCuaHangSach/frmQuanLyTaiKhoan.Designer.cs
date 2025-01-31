@@ -36,20 +36,21 @@
             this.txbMK = new System.Windows.Forms.TextBox();
             this.cbxRole = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.tslThem = new System.Windows.Forms.ToolStripLabel();
-            this.tslSua = new System.Windows.Forms.ToolStripLabel();
-            this.tslXoa = new System.Windows.Forms.ToolStripLabel();
+            this.btnTimKiem = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnThem = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.Button();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvEmployee)).BeginInit();
-            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(254, 149);
+            this.label5.Location = new System.Drawing.Point(257, 149);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(250, 35);
             this.label5.TabIndex = 2;
@@ -69,7 +70,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 64);
+            this.label1.Location = new System.Drawing.Point(4, 54);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 16);
             this.label1.TabIndex = 4;
@@ -77,7 +78,7 @@
             // 
             // txbTenDangNhap
             // 
-            this.txbTenDangNhap.Location = new System.Drawing.Point(130, 61);
+            this.txbTenDangNhap.Location = new System.Drawing.Point(108, 51);
             this.txbTenDangNhap.Name = "txbTenDangNhap";
             this.txbTenDangNhap.Size = new System.Drawing.Size(100, 22);
             this.txbTenDangNhap.TabIndex = 5;
@@ -85,7 +86,7 @@
             // txbMatKhau
             // 
             this.txbMatKhau.AutoSize = true;
-            this.txbMatKhau.Location = new System.Drawing.Point(290, 67);
+            this.txbMatKhau.Location = new System.Drawing.Point(41, 103);
             this.txbMatKhau.Name = "txbMatKhau";
             this.txbMatKhau.Size = new System.Drawing.Size(61, 16);
             this.txbMatKhau.TabIndex = 6;
@@ -93,7 +94,7 @@
             // 
             // txbMK
             // 
-            this.txbMK.Location = new System.Drawing.Point(357, 67);
+            this.txbMK.Location = new System.Drawing.Point(108, 103);
             this.txbMK.Name = "txbMK";
             this.txbMK.Size = new System.Drawing.Size(100, 22);
             this.txbMK.TabIndex = 7;
@@ -101,7 +102,7 @@
             // cbxRole
             // 
             this.cbxRole.FormattingEnabled = true;
-            this.cbxRole.Location = new System.Drawing.Point(595, 67);
+            this.cbxRole.Location = new System.Drawing.Point(404, 103);
             this.cbxRole.Name = "cbxRole";
             this.cbxRole.Size = new System.Drawing.Size(121, 24);
             this.cbxRole.TabIndex = 8;
@@ -109,59 +110,83 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(528, 70);
+            this.label3.Location = new System.Drawing.Point(337, 106);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 16);
             this.label3.TabIndex = 9;
             this.label3.Text = "Chức vụ";
             // 
-            // button1
+            // btnTimKiem
             // 
-            this.button1.Location = new System.Drawing.Point(676, 106);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 40);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Tìm Kiếm";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Location = new System.Drawing.Point(12, 12);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(84, 27);
+            this.btnTimKiem.TabIndex = 10;
+            this.btnTimKiem.Text = "Tìm Kiếm";
+            this.btnTimKiem.UseVisualStyleBackColor = true;
             // 
-            // toolStrip1
+            // textBox1
             // 
-            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tslThem,
-            this.tslSua,
-            this.tslXoa});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(800, 25);
-            this.toolStrip1.TabIndex = 11;
-            this.toolStrip1.Text = "toolStrip1";
+            this.textBox1.Location = new System.Drawing.Point(404, 51);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.TabIndex = 12;
             // 
-            // tslThem
+            // label2
             // 
-            this.tslThem.Name = "tslThem";
-            this.tslThem.Size = new System.Drawing.Size(46, 22);
-            this.tslThem.Text = "Thêm";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(337, 51);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(41, 16);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Email";
             // 
-            // tslSua
+            // btnThem
             // 
-            this.tslSua.Name = "tslSua";
-            this.tslSua.Size = new System.Drawing.Size(34, 22);
-            this.tslSua.Text = "Sửa";
+            this.btnThem.Location = new System.Drawing.Point(550, 51);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(94, 40);
+            this.btnThem.TabIndex = 13;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = true;
             // 
-            // tslXoa
+            // btnXoa
             // 
-            this.tslXoa.Name = "tslXoa";
-            this.tslXoa.Size = new System.Drawing.Size(35, 22);
-            this.tslXoa.Text = "Xóa";
+            this.btnXoa.Location = new System.Drawing.Point(672, 54);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(94, 40);
+            this.btnXoa.TabIndex = 14;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            // 
+            // btnSua
+            // 
+            this.btnSua.Location = new System.Drawing.Point(609, 106);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(94, 40);
+            this.btnSua.TabIndex = 15;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.UseVisualStyleBackColor = true;
+            // 
+            // txtTimKiem
+            // 
+            this.txtTimKiem.Location = new System.Drawing.Point(123, 17);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(676, 22);
+            this.txtTimKiem.TabIndex = 16;
             // 
             // frmQuanLyTaiKhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 496);
-            this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtTimKiem);
+            this.Controls.Add(this.btnSua);
+            this.Controls.Add(this.btnXoa);
+            this.Controls.Add(this.btnThem);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cbxRole);
             this.Controls.Add(this.txbMK);
@@ -173,8 +198,6 @@
             this.Name = "frmQuanLyTaiKhoan";
             this.Text = "frmQuanLyTaiKhoan";
             ((System.ComponentModel.ISupportInitialize)(this.dtgvEmployee)).EndInit();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -189,10 +212,12 @@
         private System.Windows.Forms.TextBox txbMK;
         private System.Windows.Forms.ComboBox cbxRole;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripLabel tslThem;
-        private System.Windows.Forms.ToolStripLabel tslSua;
-        private System.Windows.Forms.ToolStripLabel tslXoa;
+        private System.Windows.Forms.Button btnTimKiem;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.TextBox txtTimKiem;
     }
 }
