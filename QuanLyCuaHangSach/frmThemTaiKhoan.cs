@@ -13,7 +13,8 @@ namespace QuanLyCuaHangSach
 {
     public partial class frmThemTaiKhoan : Form
     {
-        private frmQuanLyTaiKhoan mainForm;
+        private readonly List<string> ListChucVu = new List<string> { "Admin", "User" };
+        private readonly frmQuanLyTaiKhoan mainForm;
 
         public frmThemTaiKhoan(frmQuanLyTaiKhoan mainForm)
         {
@@ -22,7 +23,10 @@ namespace QuanLyCuaHangSach
 
             // Khởi tạo ComboBox với danh sách chức vụ
             cboChucVu.DataSource = mainForm.chucVu;
-            cboChucVu.SelectedIndex = 0; // Chọn mục đầu tiên làm giá trị mặc định
+            if (cboChucVu.Items.Count > 0)
+            {
+                cboChucVu.SelectedIndex = 0; // Chọn mục đầu tiên làm giá trị mặc định
+            }
         }
         public frmThemTaiKhoan()
         {
@@ -59,6 +63,11 @@ namespace QuanLyCuaHangSach
         {
             this.Close();
         }
+
+        private void frmThemTaiKhoan_Load(object sender, EventArgs e)
+        {
+            cboChucVu.DataSource = ListChucVu;
+        }
     }
 }
-}
+

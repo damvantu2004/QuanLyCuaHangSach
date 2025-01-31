@@ -40,7 +40,15 @@ namespace QuanLyCuaHangSach
         }
         public void HienThiDanhSach(List<frmQuanLyTaiKhoan.TaiKhoan> danhSach)
         {
-            // Implementation of HienThiDanhSach method
+            dataGridView.DataSource = null;
+            dataGridView.DataSource = danhSach.Select(tk => new
+            {
+                Id = tk.Id,
+                Ten = tk.Ten,
+                MatKhau = tk.MatKhau,
+                Email = tk.Email,
+                ChucVu = tk.ChucVu
+            }).ToList();
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -51,21 +59,39 @@ namespace QuanLyCuaHangSach
 
         private void btnSua_Click(object sender, EventArgs e)
         {
+            // Kiểm tra xem có hàng nào được chọn không
             if (dataGridView.SelectedRows.Count > 0)
             {
-                // Lấy tài khoản được chọn
+                // Lấy hàng được chọn
                 var selectedRow = dataGridView.SelectedRows[0];
-                var taiKhoan = (TaiKhoan)selectedRow.DataBoundItem;
 
-                // Mở form sửa
+                // Lấy dữ liệu từ các ô trong hàng
+                int id = Convert.ToInt32(selectedRow.Cells[0].Value); // Cột Id (chỉ số 0)
+                string ten = selectedRow.Cells[1].Value.ToString();   // Cột Ten (chỉ số 1)
+                string email = selectedRow.Cells[2].Value.ToString(); // Cột Email (chỉ số 2)
+                string matKhau = selectedRow.Cells[3].Value.ToString(); // Cột MatKhau (chỉ số 3)
+                string chucVu = selectedRow.Cells[4].Value.ToString(); // Cột ChucVu (chỉ số 4)
+
+                // Tạo đối tượng TaiKhoan từ dữ liệu lấy được
+                var taiKhoan = new TaiKhoan
+                {
+                    Id = id,
+                    Ten = ten,
+                    Email = email,
+                    MatKhau = matKhau,
+                    ChucVu = chucVu
+                };
+
+                // Mở form sửa và truyền tài khoản được chọn
                 frmSuaTaiKhoan suaForm = new frmSuaTaiKhoan(this, taiKhoan);
-                suaForm.ShowDialog(); 
+                suaForm.ShowDialog();
             }
             else
             {
                 MessageBox.Show("Vui lòng chọn tài khoản để sửa.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
 
         private void btnXoa_Click(object sender, EventArgs e)
         {

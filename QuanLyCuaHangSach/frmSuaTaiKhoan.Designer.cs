@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btnHuy = new System.Windows.Forms.Button();
-            this.btnLuu = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.Button();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -49,14 +49,14 @@
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
             // 
-            // btnLuu
+            // btnSua
             // 
-            this.btnLuu.Location = new System.Drawing.Point(315, 128);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(94, 40);
-            this.btnLuu.TabIndex = 31;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnSua.Location = new System.Drawing.Point(315, 128);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(94, 40);
+            this.btnSua.TabIndex = 31;
+            this.btnSua.Text = "Lưu";
+            this.btnSua.UseVisualStyleBackColor = true;
             // 
             // txtEmail
             // 
@@ -129,7 +129,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(571, 188);
             this.Controls.Add(this.btnHuy);
-            this.Controls.Add(this.btnLuu);
+            this.Controls.Add(this.btnSua);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
@@ -140,6 +140,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmSuaTaiKhoan";
             this.Text = "frmSuaTaiKhoan";
+            this.Load += new System.EventHandler(this.frmSuaTaiKhoan_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -148,7 +149,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnHuy;
-        private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

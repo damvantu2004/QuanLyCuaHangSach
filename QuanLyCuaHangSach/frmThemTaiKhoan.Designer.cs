@@ -142,6 +142,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmThemTaiKhoan";
             this.Text = "frmThemTaiKhoan";
+            this.Load += new System.EventHandler(this.frmThemTaiKhoan_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
