@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.cboBaoCao = new System.Windows.Forms.ComboBox();
             this.dtpNgayBD = new System.Windows.Forms.DateTimePicker();
             this.dtpNgayKT = new System.Windows.Forms.DateTimePicker();
@@ -44,6 +44,7 @@
             // 
             // cboBaoCao
             // 
+            this.cboBaoCao.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cboBaoCao.FormattingEnabled = true;
             this.cboBaoCao.Location = new System.Drawing.Point(12, 12);
             this.cboBaoCao.Name = "cboBaoCao";
@@ -53,7 +54,7 @@
             // 
             // dtpNgayBD
             // 
-            this.dtpNgayBD.Location = new System.Drawing.Point(262, 43);
+            this.dtpNgayBD.Location = new System.Drawing.Point(175, 45);
             this.dtpNgayBD.Name = "dtpNgayBD";
             this.dtpNgayBD.Size = new System.Drawing.Size(200, 22);
             this.dtpNgayBD.TabIndex = 1;
@@ -61,7 +62,7 @@
             // 
             // dtpNgayKT
             // 
-            this.dtpNgayKT.Location = new System.Drawing.Point(570, 43);
+            this.dtpNgayKT.Location = new System.Drawing.Point(573, 45);
             this.dtpNgayKT.Name = "dtpNgayKT";
             this.dtpNgayKT.Size = new System.Drawing.Size(200, 22);
             this.dtpNgayKT.TabIndex = 2;
@@ -69,9 +70,10 @@
             // 
             // btnTaoBaoCao
             // 
-            this.btnTaoBaoCao.Location = new System.Drawing.Point(803, 42);
+            this.btnTaoBaoCao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTaoBaoCao.Location = new System.Drawing.Point(803, 44);
             this.btnTaoBaoCao.Name = "btnTaoBaoCao";
-            this.btnTaoBaoCao.Size = new System.Drawing.Size(97, 40);
+            this.btnTaoBaoCao.Size = new System.Drawing.Size(97, 29);
             this.btnTaoBaoCao.TabIndex = 3;
             this.btnTaoBaoCao.Text = "Tạo báo cáo";
             this.btnTaoBaoCao.UseVisualStyleBackColor = true;
@@ -79,25 +81,26 @@
             // 
             // btnXuatBaoCao
             // 
-            this.btnXuatBaoCao.Location = new System.Drawing.Point(906, 45);
+            this.btnXuatBaoCao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnXuatBaoCao.Location = new System.Drawing.Point(902, 44);
             this.btnXuatBaoCao.Name = "btnXuatBaoCao";
-            this.btnXuatBaoCao.Size = new System.Drawing.Size(96, 38);
+            this.btnXuatBaoCao.Size = new System.Drawing.Size(96, 29);
             this.btnXuatBaoCao.TabIndex = 4;
             this.btnXuatBaoCao.Text = "Xuất báo cáo";
             this.btnXuatBaoCao.UseVisualStyleBackColor = true;
             // 
             // chrBaoCao
             // 
-            chartArea6.Name = "ChartArea1";
-            this.chrBaoCao.ChartAreas.Add(chartArea6);
-            legend6.Name = "Legend1";
-            this.chrBaoCao.Legends.Add(legend6);
+            chartArea2.Name = "ChartArea1";
+            this.chrBaoCao.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chrBaoCao.Legends.Add(legend2);
             this.chrBaoCao.Location = new System.Drawing.Point(12, 89);
             this.chrBaoCao.Name = "chrBaoCao";
-            series6.ChartArea = "ChartArea1";
-            series6.Legend = "Legend1";
-            series6.Name = "Series1";
-            this.chrBaoCao.Series.Add(series6);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chrBaoCao.Series.Add(series2);
             this.chrBaoCao.Size = new System.Drawing.Size(986, 569);
             this.chrBaoCao.TabIndex = 5;
             this.chrBaoCao.Text = "chart1";
@@ -106,20 +109,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(168, 48);
+            this.label1.Location = new System.Drawing.Point(78, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 16);
+            this.label1.Size = new System.Drawing.Size(91, 16);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Ngày bắt đầu";
+            this.label1.Text = "Ngày bắt đầu:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(476, 48);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 16);
+            this.label2.Size = new System.Drawing.Size(91, 16);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Ngày kết thúc";
+            this.label2.Text = "Ngày kết thúc:";
             // 
             // frmBaoCao
             // 

@@ -15,11 +15,11 @@ namespace QuanLyCuaHangSach
         public frmBaoCao()
         {
             InitializeComponent();
-            cboBaoCao.Items.Add("Báo cáo doanh thu theo tháng");
-            cboBaoCao.Items.Add("Báo cáo doanh thu theo tuần");
-            cboBaoCao.Items.Add("Báo cáo doanh thu theo ngày");
-            cboBaoCao.Items.Add("Báo cáo loại sách được yêu thích");
-            cboBaoCao.Items.Add("Báo cáo sách được yêu thích");
+            cboBaoCao.Items.Add("Báo cáo doanh thu và lợi nhuận");
+            cboBaoCao.Items.Add("Báo cáo sách bán chạy");
+            cboBaoCao.Items.Add("Báo cáo tệp khách hàng");
+            cboBaoCao.Items.Add("Thống kê sách trong kho");
+            cboBaoCao.Items.Add("Thống kê hóa đơn bán");
 
             cboBaoCao.SelectedItem = null;
 
