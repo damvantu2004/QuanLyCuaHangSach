@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.cboBaoCao = new System.Windows.Forms.ComboBox();
-            this.dtpNgayBatDau = new System.Windows.Forms.DateTimePicker();
+            this.dtpNgayBD = new System.Windows.Forms.DateTimePicker();
             this.dtpNgayKT = new System.Windows.Forms.DateTimePicker();
             this.btnTaoBaoCao = new System.Windows.Forms.Button();
             this.btnXuatBaoCao = new System.Windows.Forms.Button();
@@ -49,13 +49,15 @@
             this.cboBaoCao.Name = "cboBaoCao";
             this.cboBaoCao.Size = new System.Drawing.Size(986, 24);
             this.cboBaoCao.TabIndex = 0;
+            this.cboBaoCao.SelectedIndexChanged += new System.EventHandler(this.cboBaoCao_SelectedIndexChanged);
             // 
-            // dtpNgayBatDau
+            // dtpNgayBD
             // 
-            this.dtpNgayBatDau.Location = new System.Drawing.Point(262, 43);
-            this.dtpNgayBatDau.Name = "dtpNgayBatDau";
-            this.dtpNgayBatDau.Size = new System.Drawing.Size(200, 22);
-            this.dtpNgayBatDau.TabIndex = 1;
+            this.dtpNgayBD.Location = new System.Drawing.Point(262, 43);
+            this.dtpNgayBD.Name = "dtpNgayBD";
+            this.dtpNgayBD.Size = new System.Drawing.Size(200, 22);
+            this.dtpNgayBD.TabIndex = 1;
+            this.dtpNgayBD.ValueChanged += new System.EventHandler(this.dtpNgayBD_ValueChanged);
             // 
             // dtpNgayKT
             // 
@@ -63,40 +65,43 @@
             this.dtpNgayKT.Name = "dtpNgayKT";
             this.dtpNgayKT.Size = new System.Drawing.Size(200, 22);
             this.dtpNgayKT.TabIndex = 2;
+            this.dtpNgayKT.ValueChanged += new System.EventHandler(this.dtpNgayKT_ValueChanged);
             // 
             // btnTaoBaoCao
             // 
-            this.btnTaoBaoCao.Location = new System.Drawing.Point(804, 43);
+            this.btnTaoBaoCao.Location = new System.Drawing.Point(803, 42);
             this.btnTaoBaoCao.Name = "btnTaoBaoCao";
-            this.btnTaoBaoCao.Size = new System.Drawing.Size(96, 23);
+            this.btnTaoBaoCao.Size = new System.Drawing.Size(97, 40);
             this.btnTaoBaoCao.TabIndex = 3;
             this.btnTaoBaoCao.Text = "Tạo báo cáo";
             this.btnTaoBaoCao.UseVisualStyleBackColor = true;
+            this.btnTaoBaoCao.Click += new System.EventHandler(this.btnTaoBaoCao_Click);
             // 
             // btnXuatBaoCao
             // 
             this.btnXuatBaoCao.Location = new System.Drawing.Point(906, 45);
             this.btnXuatBaoCao.Name = "btnXuatBaoCao";
-            this.btnXuatBaoCao.Size = new System.Drawing.Size(96, 23);
+            this.btnXuatBaoCao.Size = new System.Drawing.Size(96, 38);
             this.btnXuatBaoCao.TabIndex = 4;
             this.btnXuatBaoCao.Text = "Xuất báo cáo";
             this.btnXuatBaoCao.UseVisualStyleBackColor = true;
             // 
             // chrBaoCao
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chrBaoCao.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chrBaoCao.Legends.Add(legend1);
+            chartArea6.Name = "ChartArea1";
+            this.chrBaoCao.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.chrBaoCao.Legends.Add(legend6);
             this.chrBaoCao.Location = new System.Drawing.Point(12, 89);
             this.chrBaoCao.Name = "chrBaoCao";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chrBaoCao.Series.Add(series1);
+            series6.ChartArea = "ChartArea1";
+            series6.Legend = "Legend1";
+            series6.Name = "Series1";
+            this.chrBaoCao.Series.Add(series6);
             this.chrBaoCao.Size = new System.Drawing.Size(986, 569);
             this.chrBaoCao.TabIndex = 5;
             this.chrBaoCao.Text = "chart1";
+            this.chrBaoCao.Click += new System.EventHandler(this.chrBaoCao_Click);
             // 
             // label1
             // 
@@ -127,10 +132,11 @@
             this.Controls.Add(this.btnXuatBaoCao);
             this.Controls.Add(this.btnTaoBaoCao);
             this.Controls.Add(this.dtpNgayKT);
-            this.Controls.Add(this.dtpNgayBatDau);
+            this.Controls.Add(this.dtpNgayBD);
             this.Controls.Add(this.cboBaoCao);
             this.Name = "frmBaoCao";
             this.Text = "frmBaoCao";
+            this.Load += new System.EventHandler(this.frmBaoCao_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chrBaoCao)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -140,7 +146,7 @@
         #endregion
 
         private System.Windows.Forms.ComboBox cboBaoCao;
-        private System.Windows.Forms.DateTimePicker dtpNgayBatDau;
+        private System.Windows.Forms.DateTimePicker dtpNgayBD;
         private System.Windows.Forms.DateTimePicker dtpNgayKT;
         private System.Windows.Forms.Button btnTaoBaoCao;
         private System.Windows.Forms.Button btnXuatBaoCao;
