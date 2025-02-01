@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.cboBaoCao = new System.Windows.Forms.ComboBox();
             this.dtpNgayBD = new System.Windows.Forms.DateTimePicker();
             this.dtpNgayKT = new System.Windows.Forms.DateTimePicker();
@@ -44,7 +44,8 @@
             // 
             // cboBaoCao
             // 
-            this.cboBaoCao.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cboBaoCao.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cboBaoCao.FormattingEnabled = true;
             this.cboBaoCao.Location = new System.Drawing.Point(12, 12);
             this.cboBaoCao.Name = "cboBaoCao";
@@ -54,6 +55,7 @@
             // 
             // dtpNgayBD
             // 
+            this.dtpNgayBD.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dtpNgayBD.Location = new System.Drawing.Point(175, 45);
             this.dtpNgayBD.Name = "dtpNgayBD";
             this.dtpNgayBD.Size = new System.Drawing.Size(200, 22);
@@ -62,6 +64,7 @@
             // 
             // dtpNgayKT
             // 
+            this.dtpNgayKT.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dtpNgayKT.Location = new System.Drawing.Point(573, 45);
             this.dtpNgayKT.Name = "dtpNgayKT";
             this.dtpNgayKT.Size = new System.Drawing.Size(200, 22);
@@ -91,16 +94,19 @@
             // 
             // chrBaoCao
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chrBaoCao.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chrBaoCao.Legends.Add(legend2);
+            this.chrBaoCao.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            chartArea4.Name = "ChartArea1";
+            this.chrBaoCao.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.chrBaoCao.Legends.Add(legend4);
             this.chrBaoCao.Location = new System.Drawing.Point(12, 89);
             this.chrBaoCao.Name = "chrBaoCao";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chrBaoCao.Series.Add(series2);
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            this.chrBaoCao.Series.Add(series4);
             this.chrBaoCao.Size = new System.Drawing.Size(986, 569);
             this.chrBaoCao.TabIndex = 5;
             this.chrBaoCao.Text = "chart1";
@@ -108,6 +114,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(78, 48);
             this.label1.Name = "label1";
@@ -117,6 +124,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(476, 48);
             this.label2.Name = "label2";

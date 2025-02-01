@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace QuanLyCuaHangSach
 {
@@ -41,7 +42,7 @@ namespace QuanLyCuaHangSach
             btnTaoBaoCao.Enabled = false;
             btnXuatBaoCao.Enabled = false;
 
-            chrBaoCao.Visible = false;
+            chrBaoCao.Visible = true;
         }
 
         private void dtpNgayBD_ValueChanged(object sender, EventArgs e)
@@ -74,8 +75,26 @@ namespace QuanLyCuaHangSach
 
         private void btnTaoBaoCao_Click(object sender, EventArgs e)
         {
+            chrBaoCao.Series.Clear(); // Xóa dữ liệu cũ
 
+            Series series = new Series("Doanh Thu")
+            {
+                ChartType = SeriesChartType.Column // Biểu đồ dạng cột
+            };
+
+            // 🚀 Test dữ liệu ngẫu nhiên
+            Random rnd = new Random();
+            for (int i = 0; i < 10; i++)
+            {
+                string ngay = DateTime.Now.AddDays(-i).ToString("dd/MM");
+                int giaTri = rnd.Next(10, 100);
+                series.Points.AddXY(ngay, giaTri);
+            }
+
+            chrBaoCao.Series.Add(series);
+            chrBaoCao.Visible = true; // 🔥 Đảm bảo biểu đồ hiển thị sau khi tạo dữ liệu
         }
+
 
     }
 }
