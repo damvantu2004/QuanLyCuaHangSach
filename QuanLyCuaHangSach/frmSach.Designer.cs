@@ -18,8 +18,7 @@ namespace YourProjectNamespace
         private void InitializeComponent()
         {
             this.dgvSach = new System.Windows.Forms.DataGridView();
-            this.txtTimKiem = new System.Windows.Forms.TextBox();
-            this.cboTacGia = new System.Windows.Forms.ComboBox();
+            this.txtTenSach = new System.Windows.Forms.TextBox();
             this.cboTheLoai = new System.Windows.Forms.ComboBox();
             this.cboNgonNgu = new System.Windows.Forms.ComboBox();
             this.btnTimKiem = new System.Windows.Forms.Button();
@@ -27,6 +26,12 @@ namespace YourProjectNamespace
             this.lblTheLoai = new System.Windows.Forms.Label();
             this.lblNgonNgu = new System.Windows.Forms.Label();
             this.lblTimKiem = new System.Windows.Forms.Label();
+            this.txtTacGia = new System.Windows.Forms.TextBox();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
+            this.btnHuy = new System.Windows.Forms.Button();
+            this.btnLuu = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSach)).BeginInit();
             this.SuspendLayout();
             // 
@@ -38,29 +43,24 @@ namespace YourProjectNamespace
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvSach.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvSach.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvSach.ColumnHeadersHeight = 29;
-            this.dgvSach.Location = new System.Drawing.Point(30, 100);
+            this.dgvSach.Location = new System.Drawing.Point(12, 100);
             this.dgvSach.Name = "dgvSach";
             this.dgvSach.ReadOnly = true;
             this.dgvSach.RowHeadersWidth = 51;
             this.dgvSach.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSach.Size = new System.Drawing.Size(1080, 408);
+            this.dgvSach.Size = new System.Drawing.Size(784, 260);
             this.dgvSach.TabIndex = 9;
+            this.dgvSach.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSach_CellClick);
             // 
-            // txtTimKiem
+            // txtTenSach
             // 
-            this.txtTimKiem.Location = new System.Drawing.Point(120, 17);
-            this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(250, 22);
-            this.txtTimKiem.TabIndex = 1;
-            // 
-            // cboTacGia
-            // 
-            this.cboTacGia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboTacGia.Location = new System.Drawing.Point(120, 57);
-            this.cboTacGia.Name = "cboTacGia";
-            this.cboTacGia.Size = new System.Drawing.Size(160, 24);
-            this.cboTacGia.TabIndex = 3;
+            this.txtTenSach.Location = new System.Drawing.Point(120, 17);
+            this.txtTenSach.Name = "txtTenSach";
+            this.txtTenSach.Size = new System.Drawing.Size(250, 22);
+            this.txtTenSach.TabIndex = 1;
+            this.txtTenSach.TextChanged += new System.EventHandler(this.txtTenSach_TextChanged);
             // 
             // cboTheLoai
             // 
@@ -80,9 +80,9 @@ namespace YourProjectNamespace
             // 
             // btnTimKiem
             // 
-            this.btnTimKiem.Location = new System.Drawing.Point(829, 53);
+            this.btnTimKiem.Location = new System.Drawing.Point(696, 458);
             this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(100, 30);
+            this.btnTimKiem.Size = new System.Drawing.Size(103, 50);
             this.btnTimKiem.TabIndex = 8;
             this.btnTimKiem.Text = "🔍 Tìm kiếm";
             this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
@@ -124,13 +124,70 @@ namespace YourProjectNamespace
             this.lblTimKiem.Text = "🔍Tên sách:";
             this.lblTimKiem.Click += new System.EventHandler(this.lblTimKiem_Click);
             // 
+            // txtTacGia
+            // 
+            this.txtTacGia.Location = new System.Drawing.Point(120, 61);
+            this.txtTacGia.Name = "txtTacGia";
+            this.txtTacGia.Size = new System.Drawing.Size(184, 22);
+            this.txtTacGia.TabIndex = 10;
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.Location = new System.Drawing.Point(245, 458);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(100, 50);
+            this.btnXoa.TabIndex = 11;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            // 
+            // btnSua
+            // 
+            this.btnSua.Location = new System.Drawing.Point(139, 458);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(100, 50);
+            this.btnSua.TabIndex = 12;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
+            // 
+            // btnThem
+            // 
+            this.btnThem.Location = new System.Drawing.Point(30, 458);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(103, 50);
+            this.btnThem.TabIndex = 13;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            // 
+            // btnHuy
+            // 
+            this.btnHuy.Location = new System.Drawing.Point(457, 458);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(100, 50);
+            this.btnHuy.TabIndex = 14;
+            this.btnHuy.Text = "Hủy";
+            this.btnHuy.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // btnLuu
+            // 
+            this.btnLuu.Location = new System.Drawing.Point(351, 458);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(100, 50);
+            this.btnLuu.TabIndex = 15;
+            this.btnLuu.Text = "Lưu ";
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
+            // 
             // frmSach
             // 
-            this.ClientSize = new System.Drawing.Size(1140, 520);
+            this.ClientSize = new System.Drawing.Size(1141, 520);
+            this.Controls.Add(this.btnLuu);
+            this.Controls.Add(this.btnHuy);
+            this.Controls.Add(this.btnThem);
+            this.Controls.Add(this.btnSua);
+            this.Controls.Add(this.btnXoa);
+            this.Controls.Add(this.txtTacGia);
             this.Controls.Add(this.lblTimKiem);
-            this.Controls.Add(this.txtTimKiem);
+            this.Controls.Add(this.txtTenSach);
             this.Controls.Add(this.lblTacGia);
-            this.Controls.Add(this.cboTacGia);
             this.Controls.Add(this.lblTheLoai);
             this.Controls.Add(this.cboTheLoai);
             this.Controls.Add(this.lblNgonNgu);
@@ -148,9 +205,15 @@ namespace YourProjectNamespace
 
         // ** Các biến điều khiển trong Form **
         private System.Windows.Forms.DataGridView dgvSach;
-        private System.Windows.Forms.TextBox txtTimKiem;
-        private System.Windows.Forms.ComboBox cboTacGia, cboTheLoai, cboNgonNgu;
+        private System.Windows.Forms.TextBox txtTenSach;
+        private System.Windows.Forms.ComboBox cboTheLoai, cboNgonNgu;
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.Label lblTacGia, lblTheLoai, lblNgonNgu, lblTimKiem;
+        private TextBox txtTacGia;
+        private Button btnXoa;
+        private Button btnSua;
+        private Button btnThem;
+        private Button btnHuy;
+        private Button btnLuu;
     }
 }
