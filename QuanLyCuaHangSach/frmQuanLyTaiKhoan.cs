@@ -11,9 +11,13 @@ using System.Windows.Forms;
 
 namespace QuanLyCuaHangSach
 {
+    
     public partial class frmQuanLyTaiKhoan : Form
     {
-        
+        public frmQuanLyTaiKhoan()
+        {
+            InitializeComponent();
+        }
         string Status = "";
         int index = -1;
         int indexSearch = -1;

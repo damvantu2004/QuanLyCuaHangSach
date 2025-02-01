@@ -8,12 +8,16 @@ namespace QuanLyCuaHangSach
 {
     public class TaiKhoan
     {
-        
-        public string Email { get => Email; set => Email=value; }
-        public string SoDienThoai { get => SoDienThoai; set => SoDienThoai=value; }
-        public string TenDangNhap { get => TenDangNhap; set => TenDangNhap = value; }
-        public string MatKhau { get => MatKhau; set => MatKhau = value; }
-        public string ChucVu { get => ChucVu; set => ChucVu = value; }
+        private string email;
+        private string soDienThoai;
+        private string tenDangNhap;
+        private string matKhau;
+        private string chucVu;
+        public string Email { get => email;set=>  email=value; }
+        public string SoDienThoai { get => soDienThoai; set => soDienThoai=value; }
+        public string TenDangNhap { get => tenDangNhap; set => tenDangNhap = value; }
+        public string MatKhau { get => matKhau; set => matKhau = value; }
+        public string ChucVu { get => chucVu; set => chucVu = value; }
 
         public TaiKhoan(string email, string soDienThoai, string tenDangNhap, string matKhau, string chucVu)
         {
