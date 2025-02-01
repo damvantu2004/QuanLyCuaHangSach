@@ -30,5 +30,10 @@ namespace YourProjectNamespace
         {
             this.Close();
         }
+
+        private void dgvBill_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

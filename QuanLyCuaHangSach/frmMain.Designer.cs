@@ -46,41 +46,41 @@ namespace YourProjectNamespace
             this.baoCaoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1000, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1000, 30);
             this.menuStrip1.TabIndex = 0;
             // 
             // homeToolStripMenuItem
             // 
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(112, 33);
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(112, 26);
             this.homeToolStripMenuItem.Text = "🏠 Trang chủ";
             this.homeToolStripMenuItem.Click += new System.EventHandler(this.homeToolStripMenuItem_Click);
             // 
             // sachToolStripMenuItem
             // 
             this.sachToolStripMenuItem.Name = "sachToolStripMenuItem";
-            this.sachToolStripMenuItem.Size = new System.Drawing.Size(79, 33);
+            this.sachToolStripMenuItem.Size = new System.Drawing.Size(79, 26);
             this.sachToolStripMenuItem.Text = "📖 Sách";
             this.sachToolStripMenuItem.Click += new System.EventHandler(this.sachToolStripMenuItem_Click);
             // 
             // taoHoaDonToolStripMenuItem
             // 
             this.taoHoaDonToolStripMenuItem.Name = "taoHoaDonToolStripMenuItem";
-            this.taoHoaDonToolStripMenuItem.Size = new System.Drawing.Size(132, 33);
+            this.taoHoaDonToolStripMenuItem.Size = new System.Drawing.Size(132, 26);
             this.taoHoaDonToolStripMenuItem.Text = "📝 Tạo hóa đơn";
             this.taoHoaDonToolStripMenuItem.Click += new System.EventHandler(this.taoHoaDonToolStripMenuItem_Click);
             // 
             // quanLyTaiKhoanToolStripMenuItem
             // 
             this.quanLyTaiKhoanToolStripMenuItem.Name = "quanLyTaiKhoanToolStripMenuItem";
-            this.quanLyTaiKhoanToolStripMenuItem.Size = new System.Drawing.Size(163, 33);
+            this.quanLyTaiKhoanToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
             this.quanLyTaiKhoanToolStripMenuItem.Text = "👤 Quản lý tài khoản";
             this.quanLyTaiKhoanToolStripMenuItem.Click += new System.EventHandler(this.quanLyTaiKhoanToolStripMenuItem_Click);
             // 
             // baoCaoToolStripMenuItem
             // 
             this.baoCaoToolStripMenuItem.Name = "baoCaoToolStripMenuItem";
-            this.baoCaoToolStripMenuItem.Size = new System.Drawing.Size(102, 33);
+            this.baoCaoToolStripMenuItem.Size = new System.Drawing.Size(102, 26);
             this.baoCaoToolStripMenuItem.Text = "📊 Báo cáo";
             this.baoCaoToolStripMenuItem.Click += new System.EventHandler(this.baoCaoToolStripMenuItem_Click);
             // 
@@ -88,17 +88,19 @@ namespace YourProjectNamespace
             // 
             this.panelContainer.AutoSize = true;
             this.panelContainer.BackColor = System.Drawing.SystemColors.Control;
-            this.panelContainer.Location = new System.Drawing.Point(0, 40);
+            this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContainer.Location = new System.Drawing.Point(0, 30);
             this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(1000, 1000);
+            this.panelContainer.Size = new System.Drawing.Size(1000, 570);
             this.panelContainer.TabIndex = 1;
+            this.panelContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContainer_Paint);
             // 
             // frmMain
             // 
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1000, 600);
-            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.panelContainer);
+            this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMain";
             this.Text = "Quản lý Cửa hàng Sách";

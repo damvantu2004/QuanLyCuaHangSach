@@ -34,6 +34,9 @@ namespace YourProjectNamespace
             // 
             this.dgvSach.AllowUserToAddRows = false;
             this.dgvSach.AllowUserToDeleteRows = false;
+            this.dgvSach.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvSach.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvSach.ColumnHeadersHeight = 29;
             this.dgvSach.Location = new System.Drawing.Point(30, 100);
@@ -41,7 +44,7 @@ namespace YourProjectNamespace
             this.dgvSach.ReadOnly = true;
             this.dgvSach.RowHeadersWidth = 51;
             this.dgvSach.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSach.Size = new System.Drawing.Size(1070, 400);
+            this.dgvSach.Size = new System.Drawing.Size(1080, 408);
             this.dgvSach.TabIndex = 9;
             // 
             // txtTimKiem
@@ -56,28 +59,28 @@ namespace YourProjectNamespace
             this.cboTacGia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboTacGia.Location = new System.Drawing.Point(120, 57);
             this.cboTacGia.Name = "cboTacGia";
-            this.cboTacGia.Size = new System.Drawing.Size(200, 24);
+            this.cboTacGia.Size = new System.Drawing.Size(160, 24);
             this.cboTacGia.TabIndex = 3;
             // 
             // cboTheLoai
             // 
             this.cboTheLoai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboTheLoai.Location = new System.Drawing.Point(430, 57);
+            this.cboTheLoai.Location = new System.Drawing.Point(400, 57);
             this.cboTheLoai.Name = "cboTheLoai";
-            this.cboTheLoai.Size = new System.Drawing.Size(200, 24);
+            this.cboTheLoai.Size = new System.Drawing.Size(161, 24);
             this.cboTheLoai.TabIndex = 5;
             // 
             // cboNgonNgu
             // 
             this.cboNgonNgu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboNgonNgu.Location = new System.Drawing.Point(770, 57);
+            this.cboNgonNgu.Location = new System.Drawing.Point(696, 57);
             this.cboNgonNgu.Name = "cboNgonNgu";
-            this.cboNgonNgu.Size = new System.Drawing.Size(200, 24);
+            this.cboNgonNgu.Size = new System.Drawing.Size(99, 24);
             this.cboNgonNgu.TabIndex = 7;
             // 
             // btnTimKiem
             // 
-            this.btnTimKiem.Location = new System.Drawing.Point(1000, 55);
+            this.btnTimKiem.Location = new System.Drawing.Point(829, 53);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(100, 30);
             this.btnTimKiem.TabIndex = 8;
@@ -96,7 +99,7 @@ namespace YourProjectNamespace
             // lblTheLoai
             // 
             this.lblTheLoai.AutoSize = true;
-            this.lblTheLoai.Location = new System.Drawing.Point(350, 60);
+            this.lblTheLoai.Location = new System.Drawing.Point(310, 60);
             this.lblTheLoai.Name = "lblTheLoai";
             this.lblTheLoai.Size = new System.Drawing.Size(74, 16);
             this.lblTheLoai.TabIndex = 4;
@@ -105,13 +108,13 @@ namespace YourProjectNamespace
             // lblNgonNgu
             // 
             this.lblNgonNgu.AutoSize = true;
-            this.lblNgonNgu.Location = new System.Drawing.Point(670, 60);
+            this.lblNgonNgu.Location = new System.Drawing.Point(593, 60);
             this.lblNgonNgu.Name = "lblNgonNgu";
             this.lblNgonNgu.Size = new System.Drawing.Size(83, 16);
             this.lblNgonNgu.TabIndex = 6;
             this.lblNgonNgu.Text = "🈯 Ngôn ngữ:";
             // 
-            // lblTensach 
+            // lblTimKiem
             // 
             this.lblTimKiem.AutoSize = true;
             this.lblTimKiem.Location = new System.Drawing.Point(30, 20);

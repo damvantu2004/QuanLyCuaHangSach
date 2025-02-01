@@ -13,12 +13,62 @@ namespace YourProjectNamespace
         public frmHome()
         {
             InitializeComponent();
+            SetupResponsiveUI();
         }
 
         private void frmHome_Load(object sender, EventArgs e)
         {
             LoadChartData("Số Đơn Hàng"); // Mặc định hiển thị biểu đồ số đơn hàng
         }
+
+        /// <summary>
+        /// 🛠️ Thiết lập UI để tự động scale khi thay đổi kích thước cửa sổ
+        /// </summary>
+        private void SetupResponsiveUI()
+        {
+            // 🔹 TableLayoutPanel chính (Mở rộng toàn bộ form)
+            TableLayoutPanel tableLayoutPanel = new TableLayoutPanel
+            {
+                ColumnCount = 4,
+                RowCount = 2,
+                Dock = DockStyle.Fill, // Quan trọng: Cho phép tự mở rộng
+                AutoSize = true,
+            };
+
+            tableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 30F));
+            tableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 30F));
+            tableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 30F));
+            tableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 10F));
+
+            tableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 120F));
+            tableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+
+            // 🔹 Thiết lập `DockStyle.Fill` cho các thành phần
+            panelSoDonHang.Dock = DockStyle.Fill;
+            panelSoSachBan.Dock = DockStyle.Fill;
+            panelDoanhThu.Dock = DockStyle.Fill;
+            btnDarkMode.Dock = DockStyle.Fill;
+
+            // 🔹 Biểu đồ phải mở rộng toàn bộ hàng 2
+            chrData.Dock = DockStyle.Fill;
+
+            // 🔹 Thêm các thành phần vào TableLayoutPanel
+            tableLayoutPanel.Controls.Add(panelSoDonHang, 0, 0);
+            tableLayoutPanel.Controls.Add(panelSoSachBan, 1, 0);
+            tableLayoutPanel.Controls.Add(panelDoanhThu, 2, 0);
+            tableLayoutPanel.Controls.Add(btnDarkMode, 3, 0);
+            tableLayoutPanel.Controls.Add(chrData, 0, 1);
+
+            // Biểu đồ chiếm toàn bộ 4 cột
+            tableLayoutPanel.SetColumnSpan(chrData, 4);
+
+            // 🔹 Thêm vào form
+            Controls.Add(tableLayoutPanel);
+
+            // 🔹 Đặt form khởi động toàn màn hình
+            //this.WindowState = FormWindowState.Maximized;
+        }
+
 
         /// <summary>
         /// 📊 Load dữ liệu vào biểu đồ dựa trên loại dữ liệu được chọn.
@@ -32,47 +82,17 @@ namespace YourProjectNamespace
                 ChartType = SeriesChartType.Column // Biểu đồ dạng cột
             };
 
-            //// Kết nối tới database
-            //string connectionString = "Server=YOUR_SERVER;Database=YOUR_DATABASE;User Id=YOUR_USER;Password=YOUR_PASSWORD;";
-            //using (SqlConnection conn = new SqlConnection(connectionString))
-            //{
-            //    conn.Open();
-            //    string query = "";
-
-            //    // Chọn loại dữ liệu cần hiển thị
-            //    if (chartType == "Số Đơn Hàng")
-            //        query = "SELECT Ngay, COUNT(*) AS TongDon FROM HoaDon GROUP BY Ngay ORDER BY Ngay DESC";
-            //    else if (chartType == "Số Sách Bán")
-            //        query = "SELECT Ngay, SUM(SoLuong) AS TongSach FROM ChiTietHoaDon GROUP BY Ngay ORDER BY Ngay DESC";
-            //    else if (chartType == "Doanh Thu")
-            //        query = "SELECT Ngay, SUM(TongTien) AS DoanhThu FROM HoaDon GROUP BY Ngay ORDER BY Ngay DESC";
-
-            //    using (SqlCommand cmd = new SqlCommand(query, conn))
-            //    {
-            //        using (SqlDataReader reader = cmd.ExecuteReader())
-            //        {
-            //            while (reader.Read())
-            //            {
-            //                string ngay = Convert.ToDateTime(reader["Ngay"]).ToString("dd/MM");
-            //                int giaTri = Convert.ToInt32(reader[1]); // Cột thứ 2 là tổng số đơn/sách/doanh thu
-            //                series.Points.AddXY(ngay, giaTri);
-            //            }
-            //        }
-            //    }
-            //}
-
-            // test giao diện
-            Random rnd = new Random(); // 🚀 DỮ LIỆU GIẢ LẬP
+            // 🚀 Test giao diện với dữ liệu ngẫu nhiên
+            Random rnd = new Random();
             for (int i = 0; i < 10; i++)
             {
                 string ngay = DateTime.Now.AddDays(-i).ToString("dd/MM");
-                int giaTri = rnd.Next(10, 100); // 🚨 GIÁ TRỊ NGẪU NHIÊN
+                int giaTri = rnd.Next(10, 100);
                 series.Points.AddXY(ngay, giaTri);
             }
 
             chrData.Series.Add(series);
         }
-
 
         /// <summary>
         /// 📊 Khi bấm vào button "Xem biểu đồ" trong phần "Số đơn theo ngày"
@@ -103,11 +123,11 @@ namespace YourProjectNamespace
         /// </summary>
         private void btnDarkMode_Click(object sender, EventArgs e)
         {
-            isDarkMode = !isDarkMode; // Đảo trạng thái Dark Mode
+            isDarkMode = !isDarkMode;
 
             if (isDarkMode)
             {
-                // Đổi màu nền và chữ sang Dark Mode
+                // Dark Mode
                 BackColor = Color.FromArgb(45, 45, 48);
                 ForeColor = Color.White;
 
@@ -115,9 +135,7 @@ namespace YourProjectNamespace
                 panelSoSachBan.BackColor = Color.FromArgb(60, 60, 65);
                 panelDoanhThu.BackColor = Color.FromArgb(60, 60, 65);
 
-                lblSoDonHang.ForeColor = Color.White;
-                lblSoSachBan.ForeColor = Color.White;
-                lblDoanhThu.ForeColor = Color.White;
+                lblSoDonHang.ForeColor = lblSoSachBan.ForeColor = lblDoanhThu.ForeColor = Color.White;
 
                 btnDarkMode.Text = "☀️ Light Mode";
                 btnDarkMode.BackColor = Color.Gray;
@@ -125,7 +143,7 @@ namespace YourProjectNamespace
             }
             else
             {
-                // Quay lại Light Mode
+                // Light Mode
                 BackColor = Color.White;
                 ForeColor = Color.Black;
 
@@ -133,9 +151,7 @@ namespace YourProjectNamespace
                 panelSoSachBan.BackColor = Color.LightGreen;
                 panelDoanhThu.BackColor = Color.LightCoral;
 
-                lblSoDonHang.ForeColor = Color.Black;
-                lblSoSachBan.ForeColor = Color.Black;
-                lblDoanhThu.ForeColor = Color.Black;
+                lblSoDonHang.ForeColor = lblSoSachBan.ForeColor = lblDoanhThu.ForeColor = Color.Black;
 
                 btnDarkMode.Text = "🌙 Dark Mode";
                 btnDarkMode.BackColor = Color.LightGray;
