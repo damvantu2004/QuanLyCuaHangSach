@@ -36,7 +36,6 @@ namespace YourProjectNamespace
             // 
             // menuStrip1
             // 
-            this.menuStrip1.AutoSize = false;
             this.menuStrip1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -47,7 +46,7 @@ namespace YourProjectNamespace
             this.baoCaoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1000, 37);
+            this.menuStrip1.Size = new System.Drawing.Size(1000, 28);
             this.menuStrip1.TabIndex = 0;
             // 
             // homeToolStripMenuItem
@@ -87,10 +86,11 @@ namespace YourProjectNamespace
             // 
             // panelContainer
             // 
+            this.panelContainer.AutoSize = true;
             this.panelContainer.BackColor = System.Drawing.SystemColors.Control;
             this.panelContainer.Location = new System.Drawing.Point(0, 40);
             this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(1000, 563);
+            this.panelContainer.Size = new System.Drawing.Size(1000, 1000);
             this.panelContainer.TabIndex = 1;
             // 
             // frmMain
@@ -106,6 +106,7 @@ namespace YourProjectNamespace
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
     }
