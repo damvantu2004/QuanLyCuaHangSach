@@ -80,25 +80,14 @@ namespace YourProjectNamespace
         {
             OpenChildForm(new frmBaoCao());
         }
+        private void TimKiemToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmTimKiem());
+        }
 
         private void btnDarkMode_Click(object sender, EventArgs e)
         {
-            if (BackColor == Color.White)
-            {
-                BackColor = Color.FromArgb(45, 45, 48);
-                ForeColor = Color.White;
-                menuStrip1.BackColor = Color.FromArgb(30, 30, 30);
-                menuStrip1.ForeColor = Color.White;
-                panelContainer.BackColor = Color.FromArgb(60, 60, 60);
-            }
-            else
-            {
-                BackColor = Color.White;
-                ForeColor = Color.Black;
-                menuStrip1.BackColor = SystemColors.Control;
-                menuStrip1.ForeColor = Color.Black;
-                panelContainer.BackColor = SystemColors.Control;
-            }
+
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -108,6 +97,11 @@ namespace YourProjectNamespace
 
         private void panelContainer_Paint(object sender, PaintEventArgs e)
         {
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
