@@ -1,0 +1,134 @@
+[33mcommit e5bba9cc714f29b5700038be5ea28cbb0d380873[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Le Van Thang <blackyugih5@gmail.com>
+Date:   Mon Feb 3 09:43:15 2025 +0700
+
+    fix lại việc không full ô
+
+[33mcommit df3a85cb62d6ff6533b0d503bf8780331e37e7eb[m
+Author: Le Van Thang <blackyugih5@gmail.com>
+Date:   Mon Feb 3 09:40:03 2025 +0700
+
+    đã reponsive
+
+[33mcommit 426b4b2c95c463caf5e7f66f6b22ae8c40155fce[m
+Merge: 33db753 85fe87e
+Author: Thang <blackyugih4@gmail.com>
+Date:   Mon Feb 3 09:22:58 2025 +0700
+
+    Merge pull request #1 from damvantu2004/Thang
+    
+    enable ChucVu + loi lay thong tin cua QuanLyTaiKhoan -> dvgSAch
+
+[33mcommit 85fe87e9c351b3565038684ed87970e9168e1709[m[33m ([m[1;31morigin/Thang[m[33m)[m
+Author: Le Van Thang <blackyugih5@gmail.com>
+Date:   Mon Feb 3 09:10:33 2025 +0700
+
+    enable ChucVu + loi lay thong tin cua QuanLyTaiKhoan -> dvgSAch
+
+[33mcommit 33db7536b4da05715528c0e2a2c4f066fb0818b4[m
+Author: Dam Tu <damvantu2004@gmail.com>
+Date:   Sun Feb 2 12:24:21 2025 +0700
+
+    thêm frmTimKiem và button đăng xuất
+
+[33mcommit d4733ead586c1cb62a41151632dfd94d8a3cd887[m
+Author: Le Van Thang <blackyugih5@gmail.com>
+Date:   Sun Feb 2 00:53:32 2025 +0700
+
+    bị bug lặp các ô ????
+
+[33mcommit f6a3f56ae8a58d96c135bfae792430406d0f894c[m
+Author: Le Van Thang <blackyugih5@gmail.com>
+Date:   Sat Feb 1 23:34:38 2025 +0700
+
+    fix lai QLTK
+
+[33mcommit 8bf7dd66a5626edee3bff4f5fd50881070dd302d[m
+Author: Dam Tu <damvantu2004@gmail.com>
+Date:   Sat Feb 1 23:10:11 2025 +0700
+
+    reponsive cho frmBaoCao và sửa visible biểu đồ
+
+[33mcommit 976e3f9a5b0d35eeac039c25902c8ca3b4a0ebf8[m
+Author: Dam Tu <damvantu2004@gmail.com>
+Date:   Sat Feb 1 22:52:37 2025 +0700
+
+    sửa reponsive frmSach, frmHoaDon
+
+[33mcommit 4275ae5df05c2c285f5904f887c3cbc5580a657a[m
+Author: Dam Tu <damvantu2004@gmail.com>
+Date:   Sat Feb 1 21:21:54 2025 +0700
+
+    reponsive frm main
+
+[33mcommit 11ae86fadebbcd36cd0a4fd0c10233d54cc61452[m
+Author: Le Van Thang <blackyugih5@gmail.com>
+Date:   Sat Feb 1 18:00:45 2025 +0700
+
+    xong giao diện cơ bản của frmBaoCao
+
+[33mcommit 782f7f7ff95d049b4937b32213f7c39bfd51a0f7[m
+Author: Le Van Thang <blackyugih5@gmail.com>
+Date:   Sat Feb 1 15:02:17 2025 +0700
+
+    làm giao diện frmBaoCao
+
+[33mcommit 60db0a716abd164eba7d6ab706c50e44a1a24b6a[m
+Author: Le Van Thang <blackyugih5@gmail.com>
+Date:   Sat Feb 1 14:48:49 2025 +0700
+
+    xong QLTK
+
+[33mcommit 3b2c5c9cc2c31b1ca3f9db43586a8f3c9b8f73e4[m
+Author: Le Van Thang <blackyugih5@gmail.com>
+Date:   Sat Feb 1 13:24:24 2025 +0700
+
+    QLTK
+
+[33mcommit 1298297c2082b1c8261d96eeea693141d5b15bb3[m
+Author: Le Van Thang <blackyugih5@gmail.com>
+Date:   Sat Feb 1 12:53:22 2025 +0700
+
+    sua lai QuanLyTaiKhoan
+
+[33mcommit 9f16a5900d282ae45a166d8661f588d879bcd8c8[m
+Author: Dam Tu <damvantu2004@gmail.com>
+Date:   Sat Feb 1 09:10:28 2025 +0700
+
+    reponsive frmMain theo kích thước của các form child
+
+[33mcommit 5ceb9d058cf561ec8d4403acb8b249ed3f32795f[m
+Author: Le Van Thang <blackyugih5@gmail.com>
+Date:   Sat Feb 1 04:19:43 2025 +0700
+
+    thêm chức năng hoàn chỉnh cho thêm
+
+[33mcommit 103f66141d765f68bd229edd8ad4342f7ae618ac[m
+Author: Le Van Thang <blackyugih5@gmail.com>
+Date:   Sat Feb 1 03:51:34 2025 +0700
+
+    thêm chức năng của thêm sửa xóa và tìm kiếm
+
+[33mcommit b32bfb7473223fcece7edb3611e52b13de342393[m
+Author: Le Van Thang <blackyugih5@gmail.com>
+Date:   Sat Feb 1 03:23:46 2025 +0700
+
+    thêm sửa xóa và tìm kiếm
+
+[33mcommit c654b00de0ea320379ea4b07148b25d85c0a80b8[m
+Author: Le Van Thang <blackyugih5@gmail.com>
+Date:   Fri Jan 31 19:54:06 2025 +0700
+
+    mới làm giao diện cơ bản chưa cho điều kiên :)))
+
+[33mcommit 266a7b1cf8d6e4a4b58f888a4dabddcf946ec5b9[m
+Author: Dam Tu <damvantu2004@gmail.com>
+Date:   Fri Jan 31 16:30:09 2025 +0700
+
+    Add project files.
+
+[33mcommit 6d46631fd2957b3ee772cb07005eb1844ac83450[m
+Author: Dam Tu <damvantu2004@gmail.com>
+Date:   Fri Jan 31 16:30:07 2025 +0700
+
+    Add .gitattributes, .gitignore, and README.md.

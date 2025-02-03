@@ -45,6 +45,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,6 +68,7 @@
             // txtTenDangNhap
             // 
             this.txtTenDangNhap.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtTenDangNhap.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.txtTenDangNhap.Location = new System.Drawing.Point(109, 26);
             this.txtTenDangNhap.Name = "txtTenDangNhap";
             this.txtTenDangNhap.Size = new System.Drawing.Size(100, 22);
@@ -85,7 +87,7 @@
             // 
             this.cboChucVu.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cboChucVu.FormattingEnabled = true;
-            this.cboChucVu.Location = new System.Drawing.Point(561, 60);
+            this.cboChucVu.Location = new System.Drawing.Point(554, 57);
             this.cboChucVu.Name = "cboChucVu";
             this.cboChucVu.Size = new System.Drawing.Size(121, 24);
             this.cboChucVu.TabIndex = 4;
@@ -215,17 +217,31 @@
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(501, 63);
+            this.label5.Location = new System.Drawing.Point(494, 60);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(54, 16);
             this.label5.TabIndex = 16;
             this.label5.Text = "Chức vụ";
             // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Location = new System.Drawing.Point(701, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(98, 35);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "Đăng xuất";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // frmQuanLyTaiKhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(800, 496);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -243,6 +259,7 @@
             this.Controls.Add(this.txtTenDangNhap);
             this.Controls.Add(this.txtMatKhau);
             this.Controls.Add(this.txtEmail);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "frmQuanLyTaiKhoan";
             this.Text = "frmQuanLyTaiKhoan";
             this.Load += new System.EventHandler(this.frmQuanLyTaiKhoan_Load);
@@ -271,5 +288,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button1;
     }
 }

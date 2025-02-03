@@ -32,7 +32,6 @@ namespace YourProjectNamespace
             this.baoCaoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TimKiemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelContainer = new System.Windows.Forms.Panel();
-            this.btnDarkMode = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,42 +55,42 @@ namespace YourProjectNamespace
             // homeToolStripMenuItem
             // 
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(112, 24);
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(112, 31);
             this.homeToolStripMenuItem.Text = "🏠 Trang chủ";
             this.homeToolStripMenuItem.Click += new System.EventHandler(this.homeToolStripMenuItem_Click);
             // 
             // sachToolStripMenuItem
             // 
             this.sachToolStripMenuItem.Name = "sachToolStripMenuItem";
-            this.sachToolStripMenuItem.Size = new System.Drawing.Size(79, 24);
+            this.sachToolStripMenuItem.Size = new System.Drawing.Size(79, 31);
             this.sachToolStripMenuItem.Text = "📖 Sách";
             this.sachToolStripMenuItem.Click += new System.EventHandler(this.sachToolStripMenuItem_Click);
             // 
             // taoHoaDonToolStripMenuItem
             // 
             this.taoHoaDonToolStripMenuItem.Name = "taoHoaDonToolStripMenuItem";
-            this.taoHoaDonToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
+            this.taoHoaDonToolStripMenuItem.Size = new System.Drawing.Size(132, 31);
             this.taoHoaDonToolStripMenuItem.Text = "📝 Tạo hóa đơn";
             this.taoHoaDonToolStripMenuItem.Click += new System.EventHandler(this.taoHoaDonToolStripMenuItem_Click);
             // 
             // quanLyTaiKhoanToolStripMenuItem
             // 
             this.quanLyTaiKhoanToolStripMenuItem.Name = "quanLyTaiKhoanToolStripMenuItem";
-            this.quanLyTaiKhoanToolStripMenuItem.Size = new System.Drawing.Size(163, 24);
+            this.quanLyTaiKhoanToolStripMenuItem.Size = new System.Drawing.Size(163, 31);
             this.quanLyTaiKhoanToolStripMenuItem.Text = "👤 Quản lý tài khoản";
             this.quanLyTaiKhoanToolStripMenuItem.Click += new System.EventHandler(this.quanLyTaiKhoanToolStripMenuItem_Click);
             // 
             // baoCaoToolStripMenuItem
             // 
             this.baoCaoToolStripMenuItem.Name = "baoCaoToolStripMenuItem";
-            this.baoCaoToolStripMenuItem.Size = new System.Drawing.Size(102, 24);
+            this.baoCaoToolStripMenuItem.Size = new System.Drawing.Size(102, 31);
             this.baoCaoToolStripMenuItem.Text = "📊 Báo cáo";
             this.baoCaoToolStripMenuItem.Click += new System.EventHandler(this.baoCaoToolStripMenuItem_Click);
             // 
             // TimKiemToolStripMenuItem
             // 
             this.TimKiemToolStripMenuItem.Name = "TimKiemToolStripMenuItem";
-            this.TimKiemToolStripMenuItem.Size = new System.Drawing.Size(105, 24);
+            this.TimKiemToolStripMenuItem.Size = new System.Drawing.Size(105, 31);
             this.TimKiemToolStripMenuItem.Text = "🔍Tìm kiếm";
             this.TimKiemToolStripMenuItem.Click += new System.EventHandler(this.TimKiemToolStripMenuItem_Click);
             // 
@@ -105,22 +104,10 @@ namespace YourProjectNamespace
             this.panelContainer.TabIndex = 1;
             this.panelContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContainer_Paint);
             // 
-            // btnDarkMode
-            // 
-            this.btnDarkMode.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDarkMode.AutoSize = true;
-            this.btnDarkMode.Location = new System.Drawing.Point(880, 0);
-            this.btnDarkMode.Name = "btnDarkMode";
-            this.btnDarkMode.Size = new System.Drawing.Size(120, 34);
-            this.btnDarkMode.TabIndex = 4;
-            this.btnDarkMode.Text = "Đăng Xuất";
-            // 
             // frmMain
             // 
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1000, 600);
-            this.Controls.Add(this.btnDarkMode);
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -130,11 +117,9 @@ namespace YourProjectNamespace
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         private System.Windows.Forms.ToolStripMenuItem TimKiemToolStripMenuItem;
-        private System.Windows.Forms.Button btnDarkMode;
     }
 }
