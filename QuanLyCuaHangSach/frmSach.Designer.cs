@@ -45,12 +45,12 @@ namespace YourProjectNamespace
             this.dgvSach.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvSach.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvSach.ColumnHeadersHeight = 29;
-            this.dgvSach.Location = new System.Drawing.Point(-1, 100);
+            this.dgvSach.Location = new System.Drawing.Point(12, 100);
             this.dgvSach.Name = "dgvSach";
             this.dgvSach.ReadOnly = true;
             this.dgvSach.RowHeadersWidth = 51;
             this.dgvSach.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSach.Size = new System.Drawing.Size(1095, 260);
+            this.dgvSach.Size = new System.Drawing.Size(1069, 260);
             this.dgvSach.TabIndex = 9;
             this.dgvSach.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSach_CellClick);
             // 

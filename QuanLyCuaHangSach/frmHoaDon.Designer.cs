@@ -131,7 +131,7 @@ namespace YourProjectNamespace
             this.dgvBill.Location = new System.Drawing.Point(20, 240);
             this.dgvBill.Name = "dgvBill";
             this.dgvBill.RowHeadersWidth = 51;
-            this.dgvBill.Size = new System.Drawing.Size(930, 242);
+            this.dgvBill.Size = new System.Drawing.Size(921, 242);
             this.dgvBill.TabIndex = 3;
             this.dgvBill.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBill_CellContentClick);
             // 
