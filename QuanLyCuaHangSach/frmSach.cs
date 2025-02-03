@@ -1,10 +1,14 @@
 ﻿using System;
-using System.Windows.Forms;
-using System.Data;
-using QuanLyCuaHangSach;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using System.Reflection;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using QuanLyCuaHangSach;
 
 namespace YourProjectNamespace
 {
@@ -17,7 +21,8 @@ namespace YourProjectNamespace
         string Status = "";
         int index = -1;
         int indexSearch = -1;
-        #region Methods
+
+        #region Method
         void CreateColumnFordgvSach()
         {
             var colTenSach = new DataGridViewTextBoxColumn();
@@ -30,7 +35,6 @@ namespace YourProjectNamespace
             colTacGia.HeaderText = "Tác giả";
             colTheLoai.HeaderText = "Thể loại";
             colNgonNgu.HeaderText = "Ngôn ngữ";
-
 
             colTenSach.DataPropertyName = "TenSach";
             colTacGia.DataPropertyName = "TacGia";
@@ -65,7 +69,7 @@ namespace YourProjectNamespace
         {
             foreach (Control item in this.Controls)
             {
-                System.Windows.Forms.TextBox item1 = item as System.Windows.Forms.TextBox;
+                TextBox item1 = item as TextBox;
                 if (item1 != null)
                 {
                     item1.Clear();
@@ -92,7 +96,8 @@ namespace YourProjectNamespace
         {
             dgvSach.DataSource = null;
             CreateColumnFordgvSach();
-            dgvSach.DataSource = listTaiKhoan.Instance.ListUser;
+            dgvSach.DataSource = listSach.Instance.ListBook;
+            //dgvSach.DataSource = listTaiKhoan.Instance.ListUser;
             dgvSach.Refresh();
         }
         #endregion
@@ -241,11 +246,6 @@ namespace YourProjectNamespace
                 LoadListSach();
             }
         }
-
-
-
         #endregion
-
-
     }
 }
