@@ -8,6 +8,7 @@ namespace QuanLyCuaHangSach
 {
     public class listSach
     {
+       
         public static listSach instance;
         List<Sach> listBook;
         public List<Sach> ListBook { get => listBook; set => listBook = value; }
@@ -32,4 +33,5 @@ namespace QuanLyCuaHangSach
             ListBook.Add(new Sach("Sach3", "TacGia3", "Khoa học", "Tiếng Pháp"));
         }
     }
-}
+    }
+

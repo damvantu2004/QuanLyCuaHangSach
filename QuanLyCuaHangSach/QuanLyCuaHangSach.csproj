@@ -92,13 +92,13 @@
     <Compile Include="frmSach.Designer.cs">
       <DependentUpon>frmSach.cs</DependentUpon>
     </Compile>
-    <Compile Include="listSach.cs" />
     <Compile Include="frmTimKiem.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmTimKiem.Designer.cs">
       <DependentUpon>frmTimKiem.cs</DependentUpon>
     </Compile>
+    <Compile Include="listSach.cs" />
     <Compile Include="listTaiKhoan.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

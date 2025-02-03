@@ -62,7 +62,7 @@ namespace QuanLyCuaHangSach
 
         void EnableControls(bool isEnableTextBox, bool isEnableDataGridView)
         {
-            txtTenDangNhap.Enabled = txtMatKhau.Enabled = txtEmail.Enabled = txtSoDienThoai.Enabled = isEnableTextBox;
+            cboChucVu.Enabled=txtTenDangNhap.Enabled = txtMatKhau.Enabled = txtEmail.Enabled = txtSoDienThoai.Enabled = isEnableTextBox;
             dataGridView.Enabled = isEnableDataGridView;
         }
         #endregion Method
