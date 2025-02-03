@@ -68,7 +68,7 @@
             // txtTenDangNhap
             // 
             this.txtTenDangNhap.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtTenDangNhap.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.txtTenDangNhap.BackColor = System.Drawing.SystemColors.Window;
             this.txtTenDangNhap.Location = new System.Drawing.Point(109, 26);
             this.txtTenDangNhap.Name = "txtTenDangNhap";
             this.txtTenDangNhap.Size = new System.Drawing.Size(100, 22);
