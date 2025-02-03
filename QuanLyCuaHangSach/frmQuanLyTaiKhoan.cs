@@ -51,11 +51,11 @@ namespace QuanLyCuaHangSach
             colChucVu.DataPropertyName = "ChucVu";
 
             // Thiết lập chiều rộng cho các cột
-            colTenDangNhap.Width = 150;
-            colMatKhau.Width = 150;
-            colEmail.Width = 200;
-            colSoDienThoai.Width = 150;
-            colChucVu.Width = 150;
+            colTenDangNhap.Width = 300;
+            colMatKhau.Width = 300;
+            colEmail.Width = 300;
+            colSoDienThoai.Width = 300;
+            colChucVu.Width = 300;
 
             // Thêm các cột vào DataGridView
             dataGridView.Columns.AddRange(new DataGridViewColumn[] {
