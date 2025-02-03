@@ -25,11 +25,12 @@ namespace YourProjectNamespace
         #region Method
         void CreateColumnFordgvSach()
         {
+            dgvSach.Columns.Clear();
+
             var colTenSach = new DataGridViewTextBoxColumn();
             var colTacGia = new DataGridViewTextBoxColumn();
             var colTheLoai = new DataGridViewTextBoxColumn();
             var colNgonNgu = new DataGridViewTextBoxColumn();
-
 
             colTenSach.HeaderText = "Tên sách";
             colTacGia.HeaderText = "Tác giả";
@@ -41,12 +42,10 @@ namespace YourProjectNamespace
             colTheLoai.DataPropertyName = "TheLoai";
             colNgonNgu.DataPropertyName = "NgonNgu";
 
-
             colTenSach.Width = 300;
             colTacGia.Width = 300;
             colTheLoai.Width = 300;
             colNgonNgu.Width = 300;
-
 
             dgvSach.Columns.AddRange(new DataGridViewColumn[] { colTenSach, colTacGia, colTheLoai, colNgonNgu });
         }

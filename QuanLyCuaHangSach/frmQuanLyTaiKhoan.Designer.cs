@@ -50,6 +50,7 @@
             // 
             // txtEmail
             // 
+            this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtEmail.Location = new System.Drawing.Point(338, 26);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(100, 22);
@@ -57,6 +58,7 @@
             // 
             // txtMatKhau
             // 
+            this.txtMatKhau.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtMatKhau.Location = new System.Drawing.Point(109, 97);
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.Size = new System.Drawing.Size(100, 22);
@@ -64,6 +66,7 @@
             // 
             // txtTenDangNhap
             // 
+            this.txtTenDangNhap.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtTenDangNhap.Location = new System.Drawing.Point(109, 26);
             this.txtTenDangNhap.Name = "txtTenDangNhap";
             this.txtTenDangNhap.Size = new System.Drawing.Size(100, 22);
@@ -71,6 +74,7 @@
             // 
             // txtSoDienThoai
             // 
+            this.txtSoDienThoai.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtSoDienThoai.Location = new System.Drawing.Point(338, 97);
             this.txtSoDienThoai.Name = "txtSoDienThoai";
             this.txtSoDienThoai.Size = new System.Drawing.Size(100, 22);
@@ -79,6 +83,7 @@
             // 
             // cboChucVu
             // 
+            this.cboChucVu.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cboChucVu.FormattingEnabled = true;
             this.cboChucVu.Location = new System.Drawing.Point(561, 60);
             this.cboChucVu.Name = "cboChucVu";
@@ -87,6 +92,9 @@
             // 
             // dataGridView
             // 
+            this.dataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Location = new System.Drawing.Point(-2, 154);
@@ -99,6 +107,7 @@
             // 
             // btnThem
             // 
+            this.btnThem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnThem.Location = new System.Drawing.Point(-2, 427);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(116, 48);
@@ -109,6 +118,7 @@
             // 
             // btnLuu
             // 
+            this.btnLuu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLuu.Location = new System.Drawing.Point(432, 427);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(116, 48);
@@ -119,6 +129,7 @@
             // 
             // btnXoa
             // 
+            this.btnXoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnXoa.Location = new System.Drawing.Point(291, 427);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(116, 48);
@@ -129,6 +140,7 @@
             // 
             // btnSua
             // 
+            this.btnSua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnSua.Location = new System.Drawing.Point(137, 427);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(116, 48);
@@ -139,6 +151,7 @@
             // 
             // btnTimKiem
             // 
+            this.btnTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnTimKiem.Location = new System.Drawing.Point(683, 427);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(116, 48);
@@ -149,6 +162,7 @@
             // 
             // btnHuy
             // 
+            this.btnHuy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnHuy.Location = new System.Drawing.Point(561, 427);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(116, 48);
@@ -159,6 +173,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(5, 29);
             this.label1.Name = "label1";
@@ -168,6 +183,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(42, 103);
             this.label2.Name = "label2";
@@ -177,6 +193,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(247, 103);
             this.label3.Name = "label3";
@@ -186,6 +203,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(291, 32);
             this.label4.Name = "label4";
@@ -195,6 +213,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(501, 63);
             this.label5.Name = "label5";

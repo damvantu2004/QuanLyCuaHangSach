@@ -26,31 +26,41 @@ namespace QuanLyCuaHangSach
         #region Method
         void CreateColumnForDataGridView()
         {
+
+            dataGridView.Columns.Clear();
+
+            // Tạo các cột mới
             var colTenDangNhap = new DataGridViewTextBoxColumn();
             var colMatKhau = new DataGridViewTextBoxColumn();
             var colEmail = new DataGridViewTextBoxColumn();
             var colSoDienThoai = new DataGridViewTextBoxColumn();
             var colChucVu = new DataGridViewTextBoxColumn();
 
+            // Thiết lập HeaderText cho các cột
             colTenDangNhap.HeaderText = "Tên đăng nhập";
             colMatKhau.HeaderText = "Mật khẩu";
             colEmail.HeaderText = "Email";
             colSoDienThoai.HeaderText = "Số điện thoại";
             colChucVu.HeaderText = "Chức vụ";
 
-            colSoDienThoai.DataPropertyName = "SoDienThoai";
-            colEmail.DataPropertyName = "Email";
-            colChucVu.DataPropertyName = "ChucVu";
+            // Thiết lập DataPropertyName cho các cột
             colTenDangNhap.DataPropertyName = "TenDangNhap";
             colMatKhau.DataPropertyName = "MatKhau";
-        
+            colEmail.DataPropertyName = "Email";
+            colSoDienThoai.DataPropertyName = "SoDienThoai";
+            colChucVu.DataPropertyName = "ChucVu";
+
+            // Thiết lập chiều rộng cho các cột
             colTenDangNhap.Width = 150;
             colMatKhau.Width = 150;
             colEmail.Width = 200;
             colSoDienThoai.Width = 150;
             colChucVu.Width = 150;
 
-            dataGridView.Columns.AddRange(new DataGridViewColumn[] { colEmail, colSoDienThoai, colTenDangNhap, colMatKhau, colChucVu });
+            // Thêm các cột vào DataGridView
+            dataGridView.Columns.AddRange(new DataGridViewColumn[] {
+        colTenDangNhap, colMatKhau, colEmail, colSoDienThoai, colChucVu
+    });
         }
         void LoadListTaiKhoan()
         {
