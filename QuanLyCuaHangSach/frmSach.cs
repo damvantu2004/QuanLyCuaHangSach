@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLyCuaHangSach;
 
-namespace YourProjectNamespace
+namespace QuanLyCuaHangSach
 {
     public partial class frmSach : Form
     {

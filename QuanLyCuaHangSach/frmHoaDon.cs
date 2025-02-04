@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace YourProjectNamespace
+namespace QuanLyCuaHangSach
 {
     public partial class frmHoaDon : Form
     {

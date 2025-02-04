@@ -46,7 +46,6 @@
             this.label1.Size = new System.Drawing.Size(128, 35);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tài khoản";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // label3
             // 
@@ -72,7 +71,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(229, 30);
             this.textBox1.TabIndex = 3;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -92,9 +90,8 @@
             this.label4.Size = new System.Drawing.Size(128, 35);
             this.label4.TabIndex = 5;
             this.label4.Text = "Mật khẩu";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // button1
+            // buttonDangNhap
             // 
             this.button1.Location = new System.Drawing.Point(350, 331);
             this.button1.Name = "button1";
@@ -102,7 +99,7 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "Đăng Nhập";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.buttonDangNhap_Click);
             // 
             // fLogin
             // 
@@ -119,7 +116,6 @@
             this.MaximizeBox = false;
             this.Name = "fLogin";
             this.Text = "Đăng nhập";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

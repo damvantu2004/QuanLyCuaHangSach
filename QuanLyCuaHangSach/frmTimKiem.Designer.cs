@@ -1,4 +1,4 @@
-﻿namespace YourProjectNamespace
+﻿namespace QuanLyCuaHangSach
 {
     partial class frmTimKiem
     {

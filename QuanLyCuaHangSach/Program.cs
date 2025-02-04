@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using YourProjectNamespace;
+using QuanLyCuaHangSach;
 
 namespace QuanLyCuaHangSach
 {
@@ -17,7 +17,9 @@ namespace QuanLyCuaHangSach
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMain() );
+            Database.DatabaseLayer.Connect();
+
+            Application.Run(new fLogin() );
         }
     }
 }

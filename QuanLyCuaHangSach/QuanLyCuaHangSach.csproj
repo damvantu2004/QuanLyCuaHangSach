@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Messaging" />
@@ -50,6 +51,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\DAL\LoginDAL.cs" />
+    <Compile Include="Class\DatabaseLayer.cs" />
+    <Compile Include="Class\Function.cs" />
     <Compile Include="fLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +108,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sach.cs" />
     <Compile Include="TaiKhoan.cs" />
+    <Compile Include="UserRole.cs" />
     <EmbeddedResource Include="frmBaoCao.resx">
       <DependentUpon>frmBaoCao.cs</DependentUpon>
     </EmbeddedResource>
@@ -150,5 +155,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

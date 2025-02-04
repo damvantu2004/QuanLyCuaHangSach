@@ -3,7 +3,7 @@ using System.Data;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
-namespace YourProjectNamespace
+namespace QuanLyCuaHangSach
 {
     public partial class frmTimKiem : Form
     {

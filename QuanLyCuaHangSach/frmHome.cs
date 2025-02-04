@@ -4,7 +4,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 
-namespace YourProjectNamespace
+namespace QuanLyCuaHangSach
 {
     public partial class frmHome : Form
     {

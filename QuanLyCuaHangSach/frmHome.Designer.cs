@@ -1,7 +1,7 @@
 ﻿using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 
-namespace YourProjectNamespace
+namespace QuanLyCuaHangSach
 {
     partial class frmHome
     {

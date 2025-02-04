@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace YourProjectNamespace
+namespace QuanLyCuaHangSach
 {
     partial class frmSach
     {
@@ -50,7 +50,7 @@ namespace YourProjectNamespace
             this.dgvSach.ReadOnly = true;
             this.dgvSach.RowHeadersWidth = 51;
             this.dgvSach.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSach.Size = new System.Drawing.Size(1069, 260);
+            this.dgvSach.Size = new System.Drawing.Size(1069, 344);
             this.dgvSach.TabIndex = 9;
             this.dgvSach.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSach_CellClick);
             // 

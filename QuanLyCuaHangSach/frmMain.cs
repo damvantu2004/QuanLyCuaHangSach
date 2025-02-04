@@ -3,7 +3,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using QuanLyCuaHangSach;
 
-namespace YourProjectNamespace
+namespace QuanLyCuaHangSach
 {
     public partial class frmMain : Form
     {

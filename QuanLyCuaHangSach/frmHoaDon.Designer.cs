@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace YourProjectNamespace
+namespace QuanLyCuaHangSach
 {
     partial class frmHoaDon
     {
@@ -107,11 +107,13 @@ namespace YourProjectNamespace
             // btnAddToBill
             // 
             this.btnAddToBill.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddToBill.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnAddToBill.Location = new System.Drawing.Point(791, 103);
             this.btnAddToBill.Name = "btnAddToBill";
             this.btnAddToBill.Size = new System.Drawing.Size(150, 51);
             this.btnAddToBill.TabIndex = 2;
             this.btnAddToBill.Text = "➕ Thêm vào hóa đơn";
+            this.btnAddToBill.UseVisualStyleBackColor = false;
             // 
             // dgvBill
             // 
@@ -213,11 +215,13 @@ namespace YourProjectNamespace
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(791, 179);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(150, 41);
             this.button1.TabIndex = 9;
             this.button1.Text = "Xóa";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
