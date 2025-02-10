@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\DAL\LoginDAL.cs" />
+    <Compile Include="Class\DAL\TimKiem.cs" />
     <Compile Include="Class\DatabaseLayer.cs" />
     <Compile Include="Class\Function.cs" />
     <Compile Include="fLogin.cs">
@@ -142,6 +143,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Class\DAL\.editorconfig" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
